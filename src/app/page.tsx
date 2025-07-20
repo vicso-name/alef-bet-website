@@ -6,6 +6,7 @@ import LeadMagnetSection from '@/components/sections/LeadMagnetSection'
 import FAQSection from '@/components/sections/FAQSection'
 import Footer from '@/components/layout/Footer'
 import Header from '@/components/layout/Header'
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <FAQSection />
       </main>
       <Footer />
+      <Analytics/>
     </>
   )
 }
