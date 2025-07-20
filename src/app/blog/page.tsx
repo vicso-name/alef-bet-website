@@ -203,7 +203,7 @@ export default async function BlogPage() {
                       </div>
                     </div>
                     
-                    <div className="card-body p-4">
+                    <div className="card-body p-4 d-flex flex-column justify-content-between">
                       <h3 className="fs-5 fw-bold text-dark mb-3 regular-blog-title">
                         {post.title}
                       </h3>
@@ -212,10 +212,7 @@ export default async function BlogPage() {
                       </p>
                       
                       <div className="d-flex align-items-center justify-content-between small">
-                        <div className="text-muted">
-                          {new Date(post.published_at).toLocaleDateString()} • {post.read_time}
-                        </div>
-                        <div className="text-warning">
+                        <div className="text-primary">
                           Read more →
                         </div>
                       </div>

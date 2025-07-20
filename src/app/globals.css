@@ -12,6 +12,7 @@
   --primary-color: #4B6EFF;         /* сбалансированный синий */
   --secondary-color: #10B981;       /* мягкий бирюзовый */
   --accent-color: #FF9F43;          /* теплый апельсиновый, не слишком яркий */
+  --bs-dark: #364559;
 
   /* Поддерживающие */
   --pink-color: #F472B6;            /* мягкий розовый */
@@ -86,7 +87,6 @@
   box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
 }
 
-/* Модальные окна */
 .modal-content {
   border: none;
   border-radius: 1rem;
@@ -108,6 +108,7 @@
 .text-orange-custom { color: var(--orange-color) !important; }
 .text-blue-custom { color: var(--blue-color) !important; }
 .text-green-custom { color: var(--green-color) !important; }
+.text-dark { color: var(--bs-dark) !important; }
 
 /* Фоновые цвета */
 .bg-primary-custom { background-color: var(--primary-color) !important; }
@@ -505,16 +506,43 @@
   margin-bottom: 0.5rem;
 }
 
-/* Related articles hover */
+.article-content .table {
+ width: 100%;
+   overflow-x: auto;
+   margin-bottom: 0;
+}
+
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.article-content thead tr {
+  background-color: #f2f2f2;
+}
+
+.article-content th,
+.article-content td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-content table::-webkit-scrollbar {
+  height: 6px;
+}
+
+.article-content table::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
 .related-article-title {
   transition: color 0.3s ease;
 }
 
-.card:hover .related-article-title {
-  color: #fb923c !important;
-}
-
-/* Tags hover */
 .hover-tag {
   transition: background-color 0.2s ease;
 }
@@ -543,7 +571,6 @@
   background: linear-gradient(135deg, #fb923c, #ef4444);
 }
 
-/* Blog карточки hover эффекты */
 .blog-card {
   transition: all 0.5s ease;
 }
@@ -566,7 +593,7 @@
 }
 
 .blog-card:hover .blog-title {
-  color: #fb923c !important;
+  color: #364559!important;
 }
 
 .regular-blog-title {
@@ -574,7 +601,7 @@
 }
 
 .card:hover .regular-blog-title {
-  color: #fb923c !important;
+  color: #364559 !important;
 }
 
 .blog-arrow {
