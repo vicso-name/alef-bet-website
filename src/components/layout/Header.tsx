@@ -93,7 +93,7 @@ export default function Header() {
               <Link href="/blog" className="nav-link text-muted fw-medium navbar-link-custom text-decoration-none">
                 Blog
               </Link>
-              <GooglePlayButton variant="dark" size="sm" text="Download" className="px-3" />
+              <GooglePlayButton variant="primary" size="sm" text="Download" className="px-3" />
             </nav>
           </div>
         </div>

@@ -47,7 +47,7 @@ export default function LeadMagnetSection() {
           <div className="col-lg-6 text-white">
             <h2 className="display-2 fw-bold mb-4" style={{lineHeight: '1.2'}}>
               Get Your Free{' '}
-              <span style={{color: '#f27327'}}>
+              <span className="text-pink-custom">
                 Alef-Bet Chart
               </span>
             </h2>
@@ -112,7 +112,7 @@ export default function LeadMagnetSection() {
                         {['א', 'ב', 'ג', 'ד'].map((letter, i) => (
                           <div key={i} className="col-3">
                             <div className="bg-white rounded-3 p-3 shadow-sm">
-                              <div className="fs-2 font-hebrew text-accent mb-1 fw-bold">{letter}</div>
+                              <div className="fs-1 font-hebrew text-dark mb-1 fw-bold">{letter}</div>
                               <div className="small text-muted">Letter {i + 1}</div>
                             </div>
                           </div>

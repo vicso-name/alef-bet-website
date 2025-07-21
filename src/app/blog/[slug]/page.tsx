@@ -40,7 +40,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
         <section className="py-5 bg-white">
           <div className="container" style={{maxWidth: '56rem'}}>
             <div className="text-center mb-5">
-              <div className="d-inline-block bg-primary text-white fw-semibold px-3 py-2 rounded-pill mb-5 small">
+              <div className="d-inline-block bg-dark text-white fw-semibold px-3 py-2 rounded-pill mb-5 small" style={{opacity: '0.7'}}>
                 {article.category.name}
               </div>
               <h1 className="display-4 fw-bold text-dark mb-4" style={{lineHeight: '1.2'}}>

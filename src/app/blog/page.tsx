@@ -11,7 +11,6 @@ export const metadata = {
 
 export default async function BlogPage() {
   const allPosts = await getAllPosts()
-  const featuredPosts = allPosts.filter(post => post.featured)
   const regularPosts = allPosts.filter(post => !post.featured)
   
   const categories = ['All', ...Array.from(new Set(allPosts.map(post => post.category.name)))]
@@ -77,91 +76,6 @@ export default async function BlogPage() {
             </div>
           </div>
         </section>
-
-        {/* Featured Posts */}
-         <section className="py-5 bg-white">
-          <div className="container">
-            <h2 className="display-5 fw-bold text-dark mb-5 text-center">Featured Articles</h2>
-            
-            <div className="row g-4">
-              {featuredPosts.map((post) => (
-                <div key={post.slug} className="col-lg-6">
-                  <Link
-                    href={`/blog/${post.slug}`}
-                    className="card border-0 shadow hover-transform h-100 text-decoration-none blog-card"
-                    style={{borderRadius: '1.5rem'}}
-                  >
-                    {/* Image */}
-                    <div className="position-relative overflow-hidden"
-                         style={{
-                           aspectRatio: '16/9',
-                           borderRadius: '1.5rem 1.5rem 0 0'
-                         }}>
-                      {post.featured_image ? (
-                        <Image 
-                          src={post.featured_image} 
-                          alt={post.title}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 100vw, 50vw"
-                        />
-                      ) : (
-                        <div style={{
-                          background: 'linear-gradient(135deg, #fb923c, #ef4444)',
-                          width: '100%',
-                          height: '100%'
-                        }} />
-                      )}
-                      <div className="position-absolute top-0 start-0 w-100 h-100 blog-overlay"></div>
-                      <div className="position-absolute bottom-0 start-0 p-3">
-                        <span className="badge bg-white text-dark fw-semibold">
-                          {post.category.name}
-                        </span>
-                      </div>
-                    </div>
-                    
-                    <div className="card-body p-4">
-                      <h3 className="fs-3 fw-bold text-dark mb-3 blog-title">
-                        {post.title}
-                      </h3>
-                      <p className="text-muted mb-4" style={{lineHeight: '1.6'}}>
-                        {post.excerpt}
-                      </p>
-                      
-                      <div className="d-flex align-items-center justify-content-between">
-                        <div className="d-flex align-items-center gap-3">
-                          <div className="rounded-circle d-flex align-items-center justify-content-center blog-author-avatar"
-                               style={{
-                                 width: '2.5rem', 
-                                 height: '2.5rem',
-                                 background: 'linear-gradient(135deg, #fb923c, #ef4444)'
-                               }}>
-                            <span className="text-white fw-semibold small">
-                              {post.author.split(' ').map(n => n[0]).join('')}
-                            </span>
-                          </div>
-                          <div>
-                            <div className="fw-semibold text-dark small">{post.author}</div>
-                            <div className="text-muted" style={{fontSize: '0.8rem'}}>
-                              {new Date(post.published_at).toLocaleDateString()} • {post.read_time}
-                            </div>
-                          </div>
-                        </div>
-                        
-                        <div className="text-warning blog-arrow">
-                          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* All Posts */}
         <section className="py-5 bg-light">
           <div className="container">
@@ -225,14 +139,14 @@ export default async function BlogPage() {
         </section>
 
         {/* Newsletter CTA */}
-        <section className="py-5 gradient-secondary">
+        <section className="py-5">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
-                <h2 className="display-5 fw-bold text-white mb-4">
+                <h2 className="display-5 fw-bold text-dark mb-4">
                   Never Miss a Hebrew Learning Tip
                 </h2>
-                <p className="fs-5 text-white mb-4" style={{opacity: '0.9'}}>
+                <p className="col-lg-7 fs-5 text-dark mb-4 mx-auto" style={{opacity: '0.9'}}>
                   Get weekly articles, pronunciation guides, and exclusive learning resources delivered to your inbox
                 </p>
                 

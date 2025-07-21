@@ -15,7 +15,7 @@
   --bs-dark: #364559;
 
   /* Поддерживающие */
-  --pink-color: #F472B6;            /* мягкий розовый */
+  --pink-color: #f43f5e;
   --purple-color: #A78BFA;          /* светло-фиолетовый */
   --orange-color: #FBBF24;          /* спокойный янтарный */
   --blue-color: #60A5FA;            /* нежно-синий */
@@ -119,6 +119,7 @@
 .bg-orange-custom { background-color: var(--orange-color) !important; }
 .bg-blue-custom { background-color: var(--blue-color) !important; }
 .bg-green-custom { background-color: var(--green-color) !important; }
+.bg-dark { background-color: var(--bs-dark) !important; }
 
 /* ===== ГРАДИЕНТЫ ===== */
 

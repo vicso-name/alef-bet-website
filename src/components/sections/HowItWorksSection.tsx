@@ -7,21 +7,21 @@ export default function HowItWorksSection() {
       title: 'Install & choose your goal',
       description: 'Download the app and tell us what you want to achieve. Whether it\'s reading signs or understanding texts, we\'ll customize your learning path.',
       color: 'primary',
-      gradient: 'bg-primary-custom',
+      gradient: 'bg-dark',
     },
     {
       step: 2,
       title: 'Finish 22 lessons',
       description: 'Master each Hebrew letter through interactive lessons. Practice your reading skills with real Hebrew texts anytime.',
       color: 'secondary',
-      gradient: 'bg-primary-custom',
+      gradient: 'bg-dark',
     },
     {
       step: 3,
       title: 'Smart spaced repetition system',
       description: 'Our smart spaced repetition system ensures you remember what you learn. Just 5 minutes daily keeps your Hebrew knowledge growing.',
       color: 'accent',
-      gradient: 'bg-primary-custom',
+      gradient: 'bg-dark',
     },
   ]
 

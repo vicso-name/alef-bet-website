@@ -148,7 +148,7 @@ export default function FAQSection() {
             <div className="col-md-4">
               <div className="card border-0 shadow-sm hover-shadow text-center h-100">
                 <div className="card-body p-4">
-                  <div className="bg-secondary-custom rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3"
+                  <div className="bg-dark rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3"
                        style={{width: '3rem', height: '3rem'}}>
                     <svg className="text-white" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
@@ -163,7 +163,7 @@ export default function FAQSection() {
             <div className="col-md-4">
               <div className="card border-0 shadow-sm hover-shadow text-center h-100">
                 <div className="card-body p-4">
-                  <div className="bg-secondary-custom rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3"
+                  <div className="bg-dark rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3"
                        style={{width: '3rem', height: '3rem'}}>
                     <svg className="text-white" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
@@ -178,7 +178,7 @@ export default function FAQSection() {
             <div className="col-md-4">
               <div className="card border-0 shadow-sm hover-shadow text-center h-100">
                 <div className="card-body p-4">
-                  <div className="bg-secondary-custom rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3"
+                  <div className="bg-dark rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3"
                        style={{width: '3rem', height: '3rem'}}>
                     <svg className="text-white" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
